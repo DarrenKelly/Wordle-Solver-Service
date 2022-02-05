@@ -1,0 +1,91 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:title" content="Solvurdle">
+  <meta property="og:type" content="game">
+  <meta property="og:description" content="An adversarial version of Wordle">
+  <title>Solvurdle: Solves Wordle</title>
+  <link rel="icon" href="img/favicon.png">
+  <script defer="defer" src="js/solvurdle.js"></script>
+  <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body onload="onLoad();">
+  <div id="react__root" class="solvurdle__box1">
+    <div class="solvurdle__h">
+      <h1>Solvurdle</h1>
+    </div>
+
+    <div class="solvurdle__button-rows">
+      <div class="solvurdle__button-row">
+        <button id="solvurdle_reset_button" class="solvurdle__button solvurdle__button--special solvurdle__button--primary">Reset</button>
+      </div>
+    </div>
+
+    <table class="solvurdle__guess-table">
+      <tbody id="guess_table">
+        <tr>
+          <td class="solvurdle__guess-box solvurdle__guess-box--input" id=A0101>&nbsp;</td>
+          <td class="solvurdle__guess-box solvurdle__guess-box--input" id=A0102>&nbsp;</td>
+          <td class="solvurdle__guess-box solvurdle__guess-box--input" id=A0103>&nbsp;</td>
+          <td class="solvurdle__guess-box solvurdle__guess-box--input" id=A0104>&nbsp;</td>
+          <td class="solvurdle__guess-box solvurdle__guess-box--input" id=A0105>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="solvurdle__button-rows">
+      <div class="solvurdle__button-row">
+        <button id="solvurdle_submit_button" class="solvurdle__button solvurdle__button--special solvurdle__button--primary">Submit</button>
+      </div>
+      <div class="solvurdle__button-row">
+        <br>
+        <div class="">Remaining 5 letter words:&nbsp;</div>
+        <div id=remaining_word_count></div>
+      </div>
+      <div class="solvurdle__button-row">
+        <br>
+        <div id=remaining_words></div>
+      </div>
+    </div>
+  </div>
+  <div class="solvurdle__button-rows">
+    <div class="solvurdle__button-row">
+      <button class="solvurdle__button solvurdle__key">Q</button>
+       <button class="solvurdle__button solvurdle__key">W</button>
+       <button class="solvurdle__button solvurdle__key">E</button>
+       <button class="solvurdle__button solvurdle__key">R</button>
+       <button class="solvurdle__button solvurdle__key">T</button>
+       <button class="solvurdle__button solvurdle__key">Y</button>
+       <button class="solvurdle__button solvurdle__key">U</button>
+       <button class="solvurdle__button solvurdle__key">I</button>
+       <button class="solvurdle__button solvurdle__key">O</button>
+       <button class="solvurdle__button solvurdle__key">P</button>
+    </div>
+    <div class="solvurdle__button-row">
+       <button class="solvurdle__button solvurdle__key">A</button>
+       <button class="solvurdle__button solvurdle__key">S</button>
+       <button class="solvurdle__button solvurdle__key">D</button>
+       <button class="solvurdle__button solvurdle__key">F</button>
+       <button class="solvurdle__button solvurdle__key">G</button>
+       <button class="solvurdle__button solvurdle__key">H</button>
+       <button class="solvurdle__button solvurdle__key">J</button>
+       <button class="solvurdle__button solvurdle__key">K</button>
+       <button class="solvurdle__button solvurdle__key">L</button>
+    </div>
+    <div class="solvurdle__button-row">
+       <button class="solvurdle__button solvurdle__key">Z</button>
+       <button class="solvurdle__button solvurdle__key">X</button>
+       <button class="solvurdle__button solvurdle__key">C</button>
+       <button class="solvurdle__button solvurdle__key">V</button>
+       <button class="solvurdle__button solvurdle__key">B</button>
+       <button class="solvurdle__button solvurdle__key">N</button>
+       <button class="solvurdle__button solvurdle__key">M</button>
+       <button class="solvurdle__button solvurdle__key" disabled="">⟲</button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&display=swap');
+
+{
+  box-sizing: border-box
+}
+
+html {
+  height: 100%;
+  font-family: "IBM Plex Sans Condensed", "Helvetica Neue", Arial, sans-serif
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+  color: #aaa;
+  font-size: 16px
+}
+
+.solvurdle__root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%
+}
+
+.solvurdle__box1 {
+  flex: 1 1 100%;
+  width: 100%;
+  max-width: 40em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column
+}
+
+h1, h2, p, ul {
+  margin: 0
+}
+
+ul {
+  padding-inline-start: 2em
+}
+
+h2 {
+  font-weight: normal
+}
+
+.solvurdle__upper {
+  flex-grow: 1;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em
+}
+
+.solvurdle__h0 {
+  display: flex;
+  justify-content: space-between
+}
+
+.solvurdle__h {
+  flex: 1;
+  display: flex;
+  align-items: baseline
+}
+
+.solvurdle__guess-table {
+  margin: 0 auto
+}
+
+.solvurdle__guess-box {
+  width: 3em;
+  padding: .5em 0;
+  font-size: 1.25em;
+  text-align: center;
+  position: relative
+}
+
+.solvurdle__guess-symbol, .solvurdle__button-symbol {
+  font-size: .7em;
+  position: absolute;
+  bottom: 1px;
+  right: 1px
+}
+
+.solvurdle__button-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: auto;
+  margin-bottom: 1em
+}
+
+.solvurdle__button-row {
+  display: flex;
+  justify-content: center;
+  gap: 2px
+}
+
+.solvurdle__button {
+  color: #161616;
+  background-color: #e0e0e0;
+  border: 0;
+  font-family: inherit;
+  font-size: 120%;
+  text-align: center;
+  padding: .5em .25em;
+  margin: 0;
+  flex: 0 1 calc(10% - 1.8px);
+  cursor: pointer;
+  position: relative
+}
+
+.solvurdle__button:hover {
+  background-color: #cacaca
+}
+
+.solvurdle__button--special {
+  flex: 1
+}
+
+.solvurdle__guess-box--input {
+  background-color: #e0e0e0;
+  border: 1px solid #8d8d8d
+}
+
+.solvurdle__guess-box--exact, .solvurdle__button--exact {
+  background-color: #198038;
+  color: #fff
+}
+
+.solvurdle__button--exact:hover {
+  background-color: #2a9048
+}
+
+.solvurdle__guess-box--inexact, .solvurdle__button--inexact {
+  background-color: #f1c21b
+}
+
+.solvurdle__button--inexact:hover {
+  background-color: #f6d026
+}
+
+.solvurdle__guess-box--wrong, .solvurdle__button--wrong {
+  background-color: #393939;
+  color: #fff
+}
+
+.solvurdle__button--wrong:hover {
+  background-color: #4c4c4c
+}
+
+.solvurdle__button--primary {
+  background-color: #0f62fe;
+  color: #fff
+}
+
+.solvurdle__button--primary:hover {
+  background-color: #0353e9
+}
+
+.solvurdle__button--info {
+  display: block;
+  flex: 1
+}
+
+button[disabled], button[disabled]:hover {
+  background-color: #f4f4f4;
+  color: #c6c6c6;
+  cursor: auto
+}
